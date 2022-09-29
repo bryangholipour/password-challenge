@@ -26,11 +26,23 @@ var allChar ={
 function finalProd() {
   var okGo = "";
 
+//THE 5 PROMPTS NEEDED TO CREATE PASSWORD PARAMETERS//
+// let length = prompt("Welcome to the password generator. How many characters would you like your password to contain? (type a number between 8-128 and click OK)");
+
+// let specialC = confirm("Would you like special characters in your password? Click OK for yes and Cancel for no")
+
+// let upperCase = confirm("Would you like uppercase letters in your password? Click OK for yes and Cancel for no")
+
+// let lowerCase = confirm("Would you like lowercase letters in your password? Click OK for yes and Cancel for no")
+
+// let numbers = confirm("Would you like numbers in your password? Click OK for yes and Cancel for no")
+
+
   //assign length value to what the user inputs
   //prompt function for text input box 
   let length = prompt("Welcome to the password generator. How many characters would you like your password to contain? (type a number between 8-128 and click OK)");
   if(length < 8 || length > 128){
-  //This deploys an additional message (alert variety) when value entered is outside of the required range. Have not figured out how to get out of the loop when this happens
+  //This deploys an additional message (alert variety) when value entered is outside of the required range. Have not figured out how to restart the loop when this happens
     alert("You must choose a value between 8-128! Please Refresh the page to start over")
    } 
   //confirm function for "OK or Cancel" options (no text input box)
@@ -53,7 +65,22 @@ function finalProd() {
     okGo = (okGo + allChar.lowerCase);
   };
 
+// const random = Math.floor(Math.random() * upperCase.length);
+// console.log(random, upperCase[random]);
 
+// console.log((charCount) * (numbers.length))
+// if (lowerCase === true){
+  // console.log(specialC)
+// }
+// if (upperCase === true){
+  // console.log(upperCase)
+// }
+// if (specialC === true){
+  // console.log(lowerCase)
+// }
+// if (numbers === true){
+  // console.log(numbers)
+//
 
 
   let password = "";
@@ -63,38 +90,16 @@ function finalProd() {
   }
   return password;
 }
-console.log(finalProd());
-alert("Please open console to view your new password!")
+
+
+//result is printed to log, still need to get this result to print to HTML
+// console.log(finalProd());
+//Instead of console.log, putting the "finalProd" into an alert displays the generated password outside of the console and within view of the user
+window.alert("✅here is your password✅: " + finalProd());
 
 
 
 
-//THE 5 PROMPTS NEEDED TO CREATE PASSWORD PARAMETERS//
-// let length = prompt("Welcome to the password generator. How many characters would you like your password to contain? (type a number between 8-128 and click OK)");
-
-// let specialC = confirm("Would you like special characters in your password? Click OK for yes and Cancel for no")
-
-// let upperCase = confirm("Would you like uppercase letters in your password? Click OK for yes and Cancel for no")
-
-// let lowerCase = confirm("Would you like lowercase letters in your password? Click OK for yes and Cancel for no")
-
-// let numbers = confirm("Would you like numbers in your password? Click OK for yes and Cancel for no")
 
 
 
-// const random = Math.floor(Math.random() * upperCase.length);
-// console.log(random, upperCase[random]);
-
-// console.log((charCount) * (numbers.length))
-// if (okgo2 === "yes"){
-  // console.log(specialC)
-// }
-// if (okgo3 === "yes"){
-  // console.log(upperCase)
-// }
-// if (okgo4 === "yes"){
-  // console.log(lowerCase)
-// }
-// if (okgo5 === "yes"){
-  // console.log(numbers)
-//
