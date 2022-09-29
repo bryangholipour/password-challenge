@@ -91,7 +91,6 @@ function finalProd() {
   return password;
 }
 
-
 //result is printed to log, still need to get this result to print to HTML
 // console.log(finalProd());
 //Instead of console.log, putting the "finalProd" into an alert displays the generated password outside of the console and within view of the user
