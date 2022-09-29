@@ -13,6 +13,17 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+//encompassing all possible characters into a variable set creates one pool of possibilities to draw from
+//could not figure out how to add double quotes into specialC group without causing an error
+var allChar ={
+  specialC: "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~",
+  numbers: "9876543210",
+  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  lowerCase: "abcdefghijklmnopqrstuvwxyz",
+}
+
+
+
 
 
 
