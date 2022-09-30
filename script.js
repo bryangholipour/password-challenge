@@ -1,7 +1,7 @@
-// Assignment Code
+// Assignment Code DO NOT CHANGE
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Write password to the #password input DO NOT CHANGE
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -10,7 +10,7 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generate button DO NOT CHANGE
 generateBtn.addEventListener("click", writePassword);
 
 //encompassing all possible characters into a variable set creates one pool of possibilities to draw from
